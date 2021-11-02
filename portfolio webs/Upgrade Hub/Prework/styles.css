@@ -1,0 +1,155 @@
+/* Begin Styles Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal 18px "Rubik", sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+h3 {
+  margin: 30px 0;
+}
+
+/* End Styles Global */
+/* Begin Styles Header */
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: #fafafa;
+  box-shadow: 0 0 8px #4a40ec;
+  z-index: 2;
+}
+
+.header-content__img {
+  margin: 10px 20px;
+}
+
+.header-content__nav {
+  margin: 10px 20px;
+}
+
+.header-content__nav a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+}
+
+.header-content__nav a:hover {
+  border-bottom: 1px solid #e83e8c;
+}
+
+/* End Styles Header */
+/* Begin Styles Main */
+.basic-info-content__img {
+  width: 100%;
+  z-index: 1;
+}
+
+.basic-info-content__text {
+  position: absolute;
+  top: 35rem;
+  margin-left: 5rem;
+}
+
+.one,
+.two,
+.three {
+  color: #ffffff;
+  margin-bottom: .3em;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.basic-info-content__text__color {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #4a40ec;
+  max-width: 10rem;
+  text-align: center;
+}
+
+/* .two {
+}
+
+.three {
+} */
+.form-content {
+  position: fixed;
+  text-align: center;
+  padding: 10px 5px;
+  box-shadow: 6px 10px 11px 0 #1CAF9A;
+  background-color: #BF4D93;
+  z-index: 2;
+  top: 9rem;
+  right: 80px;
+  color: white;
+}
+
+.form-content-action div label {
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-content-action div {
+  color: #ffffff;
+  margin: 15px;
+}
+
+.form-content-action div label {
+  display: block;
+  margin: 10px;
+}
+
+.form-content-action div input {
+  width: 100%;
+}
+
+.form-button {
+  min-width: 100%;
+  min-height: 40px;
+  color: white;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 10px 11px 0 rgba(232, 62, 140, 1);
+  background-color: #1CAF9A;
+}
+
+main {
+  box-sizing: border-box;
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+  padding: 5px 30px;
+}
+
+.text_block {
+  border-bottom: 1px dotted #e83e8c;
+  padding: 40px 20px;
+}
+
+.text_block p {
+  margin: 20px 0;
+}
+
+.img {
+  border-radius: 10%;
+}
+
+/* End Styles Main */
+/* Begin Styles Footer */
+.footer-content {
+  padding: 20px;
+  background-color: #4a40ec;
+}
+
+.footer-text {
+  text-align: right;
+  color: white;
+}
+
+/* End Styles Footer */

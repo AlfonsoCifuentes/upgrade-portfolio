@@ -1,0 +1,477 @@
+body {
+  background-color: #1e2022;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #1f4d6e;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  -webkit-box-shadow: 2px 2px black;
+          box-shadow: 2px 2px black;
+  height: 3rem;
+}
+
+.logoContainer {
+  text-align: left;
+  -webkit-box-flex: 12;
+      -ms-flex-positive: 12;
+          flex-grow: 12;
+  margin: 0 2rem;
+}
+
+.alfonLogo {
+  font-family: "Bebas Neue", cursive;
+  color: #c9d6df;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+.navContainer {
+  text-align: right;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.navbar a {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #c9d6df;
+}
+
+.navbar a:hover {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Divs and images */
+.darkDiv {
+  padding: 12rem 5rem;
+  text-align: left;
+}
+
+.alfonDiv {
+  padding: 12rem 5rem;
+  text-align: left;
+}
+
+.alfonPic {
+  background-image: url(../images/alfonPlaya.jpeg);
+  background-repeat: no-repeat;
+  background-position: 70%;
+  background-size: cover;
+}
+
+.lightDiv {
+  padding: 15rem 5rem;
+  text-align: right;
+}
+
+.apuntesImg {
+  background-image: url(../images/notes.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.ejerciciosImg {
+  background-image: url(../images/exercises.jpg);
+  background-repeat: no-repeat;
+  background-position: 70%;
+  background-size: cover;
+}
+
+/* Sections */
+.darkSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  background-color: #1e2022;
+  color: white;
+}
+
+.lightSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  background-color: #758fa3;
+  color: black;
+}
+
+/* contact section */
+.contact {
+  width: 100%;
+  background-color: #1f4d6e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  -webkit-box-shadow: black;
+          box-shadow: black;
+  height: 3rem;
+  margin-bottom: 0%;
+}
+
+.contactContainer {
+  text-align: left;
+  -webkit-box-flex: 12;
+      -ms-flex-positive: 12;
+          flex-grow: 12;
+  margin: 0 2rem;
+}
+
+.contactLink {
+  text-decoration: none;
+  color: #c9d6df;
+}
+
+.contactLink:hover {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.linksContainer {
+  padding-right: 2rem;
+  text-align: right;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.linkLogo {
+  margin-right: 3rem;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/*   Headings and subtitles */
+.alfonHeading {
+  font-family: "Bebas Neue", cursive;
+  color: #1f4d6e;
+  font-size: 6rem;
+  line-height: 1.5;
+  font-weight: 900;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.alfonSubtitle {
+  font-family: "Roboto", sans-serif;
+  color: #52616b;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 900;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.bigLightHeading {
+  font-family: "Bebas Neue", cursive;
+  color: #f0f5f9;
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.bigDarkHeading {
+  font-family: "Bebas Neue", cursive;
+  color: #1e2022;
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.Subtitle {
+  font-family: "Roboto", sans-serif;
+  color: #1f4d6e;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 900;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+}
+
+/* Buttons */
+.darkButton {
+  border-radius: 16px;
+  -webkit-box-shadow: 0 1px 3px #666666;
+  box-shadow: 0 1px 3px #666666;
+  color: #f0f5f9;
+  font-size: 20px;
+  background: #52616b;
+  padding: 16px 20px 16px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.darkButton:hover {
+  background: #c9d6df;
+  text-decoration: none;
+  color: #1e2022;
+}
+
+.lightButton {
+  border-radius: 16px;
+  -webkit-box-shadow: 0 1px 3px #666666;
+  box-shadow: 0 1px 3px #666666;
+  color: #1e2022;
+  font-size: 20px;
+  background: #c9d6df;
+  padding: 16px 20px 16px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lightButton:hover {
+  background: #52616b;
+  text-decoration: none;
+  color: #f0f5f9;
+}
+
+.ejerciciosHeader {
+  text-align: center;
+  padding: 2rem 0 4rem 0;
+  max-width: 100%;
+  height: 30rem;
+  background-image: url(../images/exercises.jpg);
+  background-size: cover;
+  background-color: #666666;
+  background-color: #1e2933;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+.apuntesHeader {
+  text-align: center;
+  padding: 2rem 0 4rem 0;
+  max-width: 100%;
+  height: 30rem;
+  background-image: url(../images/notes.jpg);
+  background-size: cover;
+  background-color: #666666;
+  background-color: #1e2933;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+.contactoHeader {
+  text-align: center;
+  padding: 2rem 0 4rem 0;
+  max-width: 100%;
+  height: 30rem;
+  background-image: url(../images/contact.jpeg);
+  background-size: cover;
+  background-color: #666666;
+  background-color: #1e2933;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+.contactForm {
+  font-family: "Roboto", sans-serif;
+  color: #f0f5f9;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 2rem;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.legendHeading {
+  font-family: "Bebas Neue", cursive;
+  color: #c9d6df;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.formFieldset {
+  background-color: #1e2933;
+}
+
+.sendArea {
+  display: inline-block;
+  text-align: center;
+  max-width: 30%;
+}
+
+/* Common*/
+.sectionSign {
+  padding: 9rem 5rem;
+  text-align: center;
+}
+
+.subSection {
+  background-color: #52616b;
+  padding: 1rem;
+  border: #1e2022 1px solid;
+}
+
+.sectionItem {
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  color: #f0f5f9;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 900;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px black;
+}
+
+.sectionLogo {
+  height: 2rem;
+  width: 2rem;
+}
+
+/* ---------------------------------Media queries------------------------------- */
+/* 990px */
+@media all and (max-width: 990px) {
+  /* **********************Sections media queries********************** */
+  .darkSection {
+    display: inline;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+  }
+  .lightSection {
+    display: inline;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    background-color: #758fa3;
+  }
+  .alfonDiv {
+    background-color: #758fa3;
+    color: white;
+    background-image: url(../images/alfonPlaya.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    -webkit-box-shadow: 2px 2px 5px black;
+            box-shadow: 2px 2px 5px black;
+  }
+  .lightDiv {
+    background-color: #52616b;
+    color: black;
+    background-image: url(../images/notes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 5px black;
+            box-shadow: 2px 2px 5px black;
+  }
+  .bigDarkHeading {
+    color: #c9d6df;
+  }
+  .darkDiv {
+    background-color: #1e2933;
+    color: white;
+    background-image: url(../images/exercises.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    -webkit-box-shadow: 2px 2px 5px black;
+            box-shadow: 2px 2px 5px black;
+  }
+  .darkDiv .Subtitle {
+    color: #c9d6df;
+  }
+  /* **********************Headings media queries********************** */
+  .bigLightHeading,
+  .bigDarkHeading,
+  .Subtitle,
+  .darkDiv,
+  .lightDiv {
+    text-align: center;
+  }
+  /*  **************Navbar media queries*********************   */
+  .logoContainer {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 5.1rem;
+    padding: 0 0 0.5rem 0;
+  }
+  .navbar a {
+    text-align: center;
+  }
+  .navContainer {
+    padding-top: 0.1rem;
+    margin-top: 0;
+  }
+  .alfonLogo {
+    font-size: 2.3rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

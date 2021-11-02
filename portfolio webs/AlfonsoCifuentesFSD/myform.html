@@ -1,0 +1,185 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contacto</title>
+
+     <link rel="stylesheet" href="css\styles.css" />
+
+    <!-- favicon -->
+
+    <link rel="icon" href="favicon.ico" type="image/png" />
+
+    <!--  Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+
+ </head>
+
+ 
+
+ <body>
+  <nav class="navbar">
+    <div class="logoContainer">
+      <a class="alfonLogo" href="index.html">ALFONSO CIFUENTES</a>
+    </div>
+
+    <div class="navContainer">
+      <a class="navLink" href="apuntes.html">APUNTES</a>
+      <a class="navLink" href="ejercicios.html">EJERCICIOS</a>
+      <a class="navLink" href="myform.html">CONTACTO</a>
+    </div>
+  </nav> 
+
+  <div class="contactoHeader">
+    <div class="sectionSign">
+        
+        <h1 class="bigLightHeading">CONTACTAR</h1>
+        <h3 class="Subtitle">Aquí puedes contactar con Alfonso</h3>
+  </div>
+  
+  <section class="contentSection">
+        
+ <!--******************Formulario***********************-->
+ <h3 class="sectionItem">Formulario de contacto</h3>
+ <form class="contactForm" action="https://reqres.in/api/users" method="POST" autocomplete="off"> 
+     <!-- es mejor usar post si se usan datos personales privados -->
+   <fieldset class="formFieldset">
+
+     <legend class="legendHeading">
+       Datos Personales
+     </legend>
+
+     <label for="name">Nombre</label>
+     <input type="text" id="name" name="name" required />
+
+     <label for="lname">Apellido</label>
+     <input type="text" id="lname" name="lname" required/> 
+      <!-- si ponemos required se convierte en dato requerido -->
+     <!-- El id del input debe ser el mismo que ponemos en el for del label -->
+
+     <label for="city">¿Donde vives?</label>
+     <select name="city" id="city">
+       <option value="madrid">Madrid</option>
+       <option value="barcelona">Barcelona</option>
+       <option value="quahog">Quahog</option>
+       <option value="south park">South Park</option>
+       </select>
+       <!-- El value es lo que se registra en la base de datos -->
+
+       <br>
+
+       <label for="email">Email:</label>
+       <input type="text" id="email" name="email">
+
+       <label for="usuario">Usuario:</label>
+       <input type="text" id="usuario" name="usuario" minlength="4" maxlength="16" pattern="[A-Za-z0-9]">
+
+       <!-- con minlength y maxlength acotamos mínimo y máximo de caracteres,
+         con pattern acotamos el tipo de caracteres y sus rangos -->
+
+
+       <label for="password">Contraseña:</label>
+       <input type="password" id="password" name="password">
+
+
+       <br>
+
+       <label for="bdate">Fecha de nacimiento:</label>
+       <input type="date" max="current" id="bdate" name="bdate">
+
+       <label for="fcolor">Color favorito:</label>
+       <input type="color" id="fcolor" name="fcolor">
+
+
+       <br>
+
+       <label for="textarea">Tu mensaje:</label>
+       <br>
+       <textarea name="textarea" id="textarea" cols="60" rows="5" placeholder="Tu mensaje"></textarea>
+       <!-- El placeholder hace de ejemplo para los datos que se van a introducir -->
+
+     </select>
+   </fieldset>
+<br>
+
+   <fieldset class="formFieldset">
+     <legend class="legendHeading">
+       Preferencias
+     </legend>
+
+     <label for="vip">¿Quieres suscribirte a la newsletter?</label>
+     <input type="checkbox" id="vip" name="vip">
+
+
+     <br>
+     <br>
+
+     <label for="fav_language">Selecciona tu lenguaje de programación favorito</label>
+
+
+     <br>
+
+     <label for="html">
+       <input type="radio" id="html" name="fav_language" value="HTML"> HTML
+     </label>
+
+     <br>
+
+     <label for="jscript">
+       <input type="radio" id="jscript" name="fav_language" value="JavaScript"> JavaScript
+     </label>
+
+     <br>
+
+     <label for="CSS">
+       <input type="radio" id="CSS" name="fav_language" value="CSS"> CSS
+     </label>
+
+     
+
+
+   </fieldset>
+
+   <br>
+  <!--  <input type="submit"> -->  <!-- Es lo mismo, pero al button con tipo submit se le pueden dar mejor estilos -->
+  <div class="sendArea">
+    <button class="lightButton" type="submit">Enviar</button>
+  </div> 
+  
+ </form>
+  
+  </section>
+
+  <section class="contact" id="contactSection">
+    <div class="contactContainer">
+      <a class="contactLink" href="myform.html">Contactar</a>
+    </div>
+
+    <div class="linksContainer">
+      <a href="https://www.instagram.com/alfonsocifuentesmusic/">
+        <img
+          class="linkLogo"
+          src="images\120px-Instagram-Icon.png"
+          alt="Instagram Icon"
+        />
+      </a>
+      <a href="https://soundcloud.com/alfonsocifuentes">
+        <img class="linkLogo" src="images\pngwing.com.png" alt="" />
+      </a>
+    </div>
+  </section>
+ 
+ 
+ 
+ 
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contact Alfonso Cifuentes</title>
+
+     <link rel="stylesheet" href="css\styles.css" />
+
+    <!-- favicon -->
+
+    <link rel="icon" href="favicon.ico" type="image/png" />
+
+    <!-- Google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+ </head>
+
+ 
+
+ <body>
+   <!-- NAV.......................................................... -->
+   <section>
+    <nav class="navbar">
+      <a class="navLink" href="index.html">RETURN TO HOME PAGE</a>
+     
+    </nav>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO........................................ -->
+  
+  <section id="contact">
+    <div class="sectionDiv">
+      <div class="sectionHeader">
+        <span> HERE YOU CAN </span>
+        <h3 class="sectionSign">CONTACT ME</h3>
+        <div class="roundedDiv">
+          
+             
+ 
+              <form class="contactForm" action="https://reqres.in/api/users" method="POST" autocomplete="off"> 
+                  
+                <fieldset class="formFieldset">
+
+                  <legend class="legendHeading">
+                    Personal data
+                  </legend>
+
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" pattern="[A-Za-z0]"  required/>
+
+                  <br>
+
+                  <label for="lname">Surname</label>
+                  <input type="text" id="lname" name="lname" pattern="[A-Za-z0]" required/> 
+                  
+                  <br>
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" pattern="[A-Za-z0]">
+                  <br>
+                  <label for="city">Country</label>
+                  <input type="text" id="country" name="country" pattern="[A-Za-z0]">
+                  
+                  <br>
+
+                  <label for="email">Email:</label>
+                  <input type="text" id="email" name="email">
+                
+                  <br>
+
+                  <label for="textarea">Type your message here</label>
+
+                  <br>
+
+                  <textarea name="textarea" id="textarea" cols="45" rows="10" placeholder="Hi Alfonso Cifuentes. I need your services and I want to hire you"></textarea>
+                    
+
+                  </select>
+                </fieldset>
+              <br>
+
+                <fieldset class="formFieldset">
+                  <legend class="legendHeading">
+                    Preferences
+                  </legend>
+
+                  <label for="vip">Subscribe to newsletter</label>
+                  <input type="checkbox" id="vip" name="vip">
+
+                
+
+
+                </fieldset>
+
+                <br>
+                <!--  <input type="submit"> -->  <!-- Es lo mismo, pero al button con tipo submit se le pueden dar mejor estilos -->
+                <div class="sendArea">
+                  <button class="lightButton" type="submit">Submit</button>
+                </div> 
+                
+              </form>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!--FOOTER.......................................................... -->
+
+  <footer>
+    <div class="footerDiv">
+      <div class="contactContainer">
+        <a class="contactLink" href="../Portfolio/contactForm.html">CONTACT</a>
+      </div>
+
+      <div class="linksContainer">
+        <a href="https://www.instagram.com/alfonsocifuentesmusic/">
+          <img
+            class="linkLogo"
+            src="images\120px-Instagram-Icon.png"
+            alt="Instagram Icon"
+          />
+        </a>
+        <a href="https://soundcloud.com/alfonsocifuentes">
+          <img class="linkLogo" src="images\pngwing.com.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </footer>
+ 
+ 
+ 
+ 
+
+</body>
+</html>

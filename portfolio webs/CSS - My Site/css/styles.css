@@ -1,0 +1,182 @@
+body {
+  background-color: #2b2e4a;
+  text-align: center;
+  margin: 0 0 0 auto;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 8rem;
+  font-family: 'Goldman', cursive;
+  margin: 0 auto;
+  color: #D1E8FF;
+  line-height: 2;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Goldman', cursive;
+  margin: 0 auto;
+  color: #294B6E;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: 'Goldman', cursive;
+  margin: 0 auto;
+  color: #294B6E;
+}
+
+a {
+  font-size: 1.5rem;
+  font-family: 'Goldman', cursive;
+  margin: 20px 10px;
+  color: #D1E8FF;
+  text-decoration: none;
+}
+
+a:hover {
+color: white;
+}
+
+
+hr {
+  border-top: 5px dashed #2b2e4a;
+  border-bottom: 0;
+  width: 33.3%;
+  border-left: 0;
+  border-right: 0;
+  margin: 100px auto;
+}
+
+p {
+  line-height: 2;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: #294B6E;
+  font-family: 'Goldman', cursive;
+}
+
+.navbar > div {
+  flex: 1;
+}
+
+.navbutton:hover {
+  background: #6283A3;
+}
+
+.subtitle {
+  font-size: 3rem;
+  font-family: 'Goldman', cursive;
+  margin: 0 auto;
+  color: #294B6E;
+}
+
+.Title {
+  position: relative;
+  top: 10px;
+  margin: 0 auto;
+}
+
+.top-container {
+  background-image: url('images/PlazaEspania.jpg');
+  background-color: #2b2e4a;
+  position: relative;
+  margin: 0;
+  border: 0;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.fotofondo {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.middle-container {
+  background: #6283A3;
+  margin: 10px 0;
+}
+
+.bottom-container {
+  background: #2b2e4a;
+  margin: auto;
+  padding: 0 0 20px 0;
+}
+
+.logos {
+  height: 33%;
+  width: 33%;
+  float: left;
+  margin-right: 30px;
+  background-color: #294B6E;
+  border-radius: 100%;
+}
+
+.profpic {
+  margin-top: 60px;
+  border-radius: 50%;
+  width: 20%;
+}
+
+.skill-row {
+  position: relative;
+  margin: 100px auto 100px auto;
+  width: 50%;
+  text-align: left;
+}
+
+.profile {
+  padding-bottom: 50px;
+  margin: 100px auto;
+}
+
+.Skills {
+  margin: 100px auto;
+  padding-bottom: 100px;
+}
+
+.contact-me {
+  margin: 10px auto 50px auto;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 50px auto 60px;
+}
+
+.myButton {
+  box-shadow: 0 0 9px 2px #9fb4f2;
+  background: linear-gradient(to bottom, #85c4ff 5%, #07447d 100%);
+  background-color: #85c4ff;
+  border-radius: 10px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Goldman', cursive;
+  font-size: 19px;
+  padding: 12px 37px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #283966;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #07447d 5%, #85c4ff 100%);
+  background-color: #07447d;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
