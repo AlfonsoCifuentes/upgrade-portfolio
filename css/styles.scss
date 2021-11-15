@@ -73,6 +73,7 @@ p {
 .alfonLogo {
   display: none;
   font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
 }
 
 
@@ -101,6 +102,7 @@ p {
   font-size: 1.5rem;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.51);
 }
 
 .alfon {
@@ -108,12 +110,14 @@ p {
   font-size: 4.5rem;
   letter-spacing: 2px;
   margin-bottom: 0;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.75);
 }
 
 .presentationSubtitle {
   font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
   color: $titlecolor;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.51);
 }
 
 #aboutMe {
@@ -171,6 +175,8 @@ p {
 
 .fotoTransparente {
   display: none;
+  
+  
 }
 
 /*.............Portfolio section..................................... */
@@ -301,7 +307,11 @@ ul {
   padding: 1rem;
 }
 
-/*.............Personal info (about me) section..................... */
+/*.............Other..................... */
+
+footer {
+  padding-top: 4.3rem;
+}
 
 .footerDiv {
   width: 100%;
@@ -363,6 +373,16 @@ ul {
 .lightButton:hover {
   background-color: white;
 }
+
+/* ---------------------------------Contact Form------------------------------- */
+
+.formElement {
+  padding: 0.5rem;
+}
+
+
+
+
 
 /* ---------------------------------Media queries------------------------------- */
 /* 990px */
