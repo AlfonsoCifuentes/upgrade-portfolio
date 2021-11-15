@@ -1,7 +1,7 @@
 /* General......................................................... */
 body {
   background-color: #1E1E28;
-  margin: 0 !important;
+  margin: 0;
   color: #616168;
   font-family: "DM Sans", sans-serif;
 }
@@ -38,7 +38,6 @@ p {
 
 /* Navbar......................................................... */
 .navbar {
-  margin: 0;
   width: 100%;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
@@ -65,6 +64,7 @@ p {
           box-shadow: 2px 2px black;
   height: 3rem;
   z-index: 5;
+  overflow: auto;
 }
 
 .navLink {
@@ -72,6 +72,15 @@ p {
   padding-right: 1.5rem;
   text-decoration: none;
   color: #616168;
+}
+
+.logoDiv {
+  display: none;
+}
+
+.alfonLogo {
+  display: none;
+  font-size: 2rem;
 }
 
 /* Sections......................................................... */
@@ -170,6 +179,10 @@ p {
   text-decoration: none;
   color: #616168;
   padding: 1rem;
+}
+
+.fotoTransparente {
+  display: none;
 }
 
 /*.............Portfolio section..................................... */
@@ -337,7 +350,8 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.3rem;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 00.5rem;
   -webkit-box-shadow: black;
           box-shadow: black;
   height: 3rem;
@@ -370,9 +384,6 @@ ul {
 .linksContainer {
   padding-right: 2rem;
   text-align: right;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
 }
 
 .lightButton {
@@ -430,6 +441,85 @@ ul {
     justify-items: center;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
+  }
+}
+
+/*.............Presentation section media queries..................................... */
+@media all and (min-width: 1080px) {
+  .navbar {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logoDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 2rem;
+  }
+  .divLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 2rem;
+  }
+  .alfonLogo {
+    display: inline;
+  }
+  .cardsDiv {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #services .cardsDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #services .card {
+    margin: 0;
+    width: 28%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .fotoTransparente {
+    display: block;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 88px;
+    left: 75%;
+  }
+  .presentationDiv {
+    text-align: left;
+    padding-left: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .textPresDiv {
+    padding-left: 2rem;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */

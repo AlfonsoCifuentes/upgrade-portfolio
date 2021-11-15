@@ -4,7 +4,7 @@
 
 body {
   background-color: $backgroundcolor;
-  margin: 0 !important ;
+  margin: 0;
   color: $textcolor;
   font-family: "DM Sans", sans-serif;
 }
@@ -41,7 +41,7 @@ p {
 
 /* Navbar......................................................... */
 .navbar {
-  margin: 0;
+  
   width: 100%;
   min-height: fit-content;
   background-color: $highlightcolor;
@@ -56,6 +56,7 @@ p {
   box-shadow: 2px 2px black;
   height: 3rem;
   z-index: 5;
+  overflow: auto;
 }
 
 .navLink {
@@ -65,6 +66,14 @@ p {
   color: $textcolor;
 }
 
+.logoDiv {
+  display: none;
+}
+
+.alfonLogo {
+  display: none;
+  font-size: 2rem;
+}
 
 
 /* Sections......................................................... */
@@ -158,6 +167,10 @@ p {
   color: $textcolor;
 
   padding: 1rem;
+}
+
+.fotoTransparente {
+  display: none;
 }
 
 /*.............Portfolio section..................................... */
@@ -298,7 +311,8 @@ ul {
   align-items: center;
   justify-content: space-between;
   font-size: 1.3rem;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 00.5rem;
   box-shadow: black;
   height: 3rem;
   margin-bottom: 0%;
@@ -328,7 +342,7 @@ ul {
 .linksContainer {
   padding-right: 2rem;
   text-align: right;
-  min-width: fit-content;
+  
 }
 
 .lightButton {
@@ -369,6 +383,10 @@ ul {
   .cardText {
     text-align: justify;
   }
+
+  
+
+
   /*.............Portfolio section media queries..................................... */
 
   .thumbnailPic {
@@ -382,5 +400,85 @@ ul {
     justify-items: center;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
+  }
+}
+
+
+
+/*.............Presentation section media queries..................................... */
+
+@media all and (min-width: 1080px) {
+
+  .navbar {
+    
+    
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    
+  }
+
+
+
+.logoDiv {
+  display: flex;
+  padding-left: 2rem;
+  
+}
+
+.divLinks {
+  display: flex;
+  padding-right: 2rem;
+  
+}
+.alfonLogo {
+  display: inline;
+}
+
+.cardsDiv{
+  justify-content: space-between;
+}
+
+#services .cardsDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#services .card{
+  margin: 0;
+  width: 28%;
+}
+
+
+
+}
+
+@media all and (min-width: 1200px) {
+  .fotoTransparente {
+    display: block;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 88px;
+    left: 75%;
+    
+  }
+
+  .presentationDiv {
+    text-align: left;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .textPresDiv { 
+    padding-left: 2rem;
+    text-align: center;
   }
 }
